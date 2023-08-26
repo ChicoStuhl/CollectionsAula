@@ -32,6 +32,10 @@ public class GerenciadorAlunos
         return alunosPorMatricula;
     }
 
+    public void exibirAlunos(){
+        System.out.println(alunoSet);
+    }
+
     public static void main(String[] args)
     {
         GerenciadorAlunos gerenciadorAlunos = new GerenciadorAlunos();
@@ -46,7 +50,7 @@ public class GerenciadorAlunos
         System.out.println(gerenciadorAlunos.exibirAlunoPorNome());
         System.out.println(gerenciadorAlunos.exibirAlunoPorNota());
         System.out.println(gerenciadorAlunos.exibirAlunoPorMatricula());
-
+        gerenciadorAlunos.exibirAlunos();
 
     }
 }
